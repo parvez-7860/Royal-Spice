@@ -374,6 +374,35 @@ text-decoration:none;
         right: 0;
     }
 }
+
+.experience {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.experience p {
+    max-width: 800px;
+    margin: 20px auto 40px;
+    line-height: 1.7;
+}
+
+.experience-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.experience-gallery img {
+    width: 300px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.experience-gallery img:hover {
+    transform: scale(1.05);
+}
+
 /* ================= PREMIUM FOOTER ================= */
 
 .footer {
