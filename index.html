@@ -1,89 +1,114 @@
-<!DOCTYPE html>
-<html>
+
+        <!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Royal Spice | Luxury Dining</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Royal Spice | Fine Dining Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-
-  
-
 <body>
 
-<div class="navbar">
-<div class="container">
-<a class="navbar-brand" href="index.html">Royal Spice</a>
-<div class="nav-links">
-<a href="menu.html">Menu</a>
-<a href="gallery.html">Gallery</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</div>
-</div>
-</div>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+    <a href="index.html" class="navbar-brand">Royal Spice</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
 
+<!-- ================= HERO ================= -->
 <section class="hero-home">
-    <div class="hero-overlay">
-        <h1 class="gold-text">Welcome to Royal Spice</h1>
-        <p>Experience Authentic Indian Flavors with Royal Ambience</p>
-        <a href="menu.html" class="btn">Explore Our Menu</a>
+    <div class="hero-content">
+        <h1 class="gold-text">Experience Royal Dining</h1>
+        <p>Authentic Indian flavors crafted with passion in the heart of Hyderabad.</p>
+        <a href="contact.html" class="btn">Reserve a Table</a>
     </div>
 </section>
 
-  <section class="home-about">
-    <div class="home-container">
-        <div class="home-text">
-            <h2 class="gold-text">A Royal Dining Experience</h2>
-            <p>
-                Royal Spice brings together tradition, taste, and elegance.
-                Our chefs use handpicked spices and fresh ingredients
-                to craft dishes that celebrate India's rich culinary heritage.
-            </p>
-            <p>
-                From aromatic biryanis to creamy curries and sizzling
-                tandoori delights, every dish tells a story of passion.
-            </p>
-        </div>
-
-        <div class="home-image">
-            <img src="https://images.unsplash.com/photo-1555992336-03a23c2b7b5b">
-        </div>
-    </div>
-  </section>
-  
-
-
+<!-- ================= ABOUT PREVIEW ================= -->
 <section>
-<div class="container">
-<h2 class="section-title">Chef's Special</h2>
+    <div class="home-about">
+        <div>
+            <h2 class="gold-text">Welcome to Royal Spice</h2>
+            <p>
+                At Royal Spice, we bring together tradition and innovation to create 
+                unforgettable dining experiences. Our chefs blend authentic Indian 
+                spices with modern culinary techniques to deliver perfection in every bite.
+            </p>
+            <p>
+                Located in Hyderabad, we are known for our premium ambiance, 
+                exceptional service, and delicious dishes prepared with fresh ingredients.
+            </p>
+            <a href="about.html" class="btn">Read More</a>
+        </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
-<div class="card-body">
-<h3>Royal Signature Biryani</h3>
-<p>Crafted with premium spices & perfection.</p>
-</div>
-</div>
-
-</div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Restaurant Interior">
+        </div>
+    </div>
 </section>
 
+<!-- ================= SPECIAL MENU ================= -->
+<section>
+    <h2 class="gold-text" style="text-align:center;margin-bottom:60px;">Our Special Menu</h2>
 
+    <div class="gallery">
 
-<a href="#" class="whatsapp">💬</a>
-  
-<script>
-function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
-}
-</script>
-  
-<div class="map-section">
-    <h2 class="gold-text">Visit Us in Hyderabad</h2>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+            <div class="card-body">
+                <h3>Hyderabadi Biryani</h3>
+                <p>Authentic dum-style biryani cooked with aromatic basmati rice and royal spices.</p>
+            </div>
+        </div>
 
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600891963935-c4c9a7c9c3b6">
+            <div class="card-body">
+                <h3>Butter Chicken</h3>
+                <p>Creamy tomato-based curry blended with tender grilled chicken.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1603079840304-7d2c0f5b4a17">
+            <div class="card-body">
+                <h3>Tandoori Platter</h3>
+                <p>A selection of grilled kebabs marinated in rich Indian spices.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section style="text-align:center;">
+    <h2 class="gold-text">Luxury Ambiance</h2>
+    <p style="max-width:800px;margin:20px auto 40px;line-height:1.8;">
+        Step into a world of elegance and comfort. Royal Spice offers a premium
+        fine dining atmosphere with warm lighting, royal interiors, and a welcoming vibe.
+        Perfect for family dinners, celebrations, and corporate gatherings.
+    </p>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1541542684-4a5b1a5e3f5c">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
+        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c">
+    </div>
+</section>
+
+<!-- ================= MAP ================= -->
+<section>
+    <h2 class="gold-text" style="text-align:center;margin-bottom:40px;">Visit Us in Hyderabad</h2>
     <div class="map-container">
         <iframe 
             src="https://www.google.com/maps?q=Hyderabad,India&output=embed"
@@ -94,44 +119,39 @@ function toggleMenu() {
             loading="lazy">
         </iframe>
     </div>
-</div>
+</section>
 
-    <footer class="footer">
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
     <div class="footer-container">
 
         <div class="footer-box">
             <h3>Royal Spice</h3>
-            <p>
-                Experience luxury dining with authentic Indian flavors,
-                elegant ambience, and unforgettable taste.
-            </p>
+            <p>Experience authentic Indian cuisine with luxury ambiance in Hyderabad.</p>
         </div>
 
         <div class="footer-box">
             <h3>Quick Links</h3>
             <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="gallery.html">Gallery</a>
             <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a>
         </div>
 
         <div class="footer-box">
-            <h3>Contact Us</h3>
-    
-            <p>📞 +917758009326</p>
-            <p>📧 royalspice@email.com</p>
+            <h3>Contact Info</h3>
+            <p>Hyderabad, India</p>
+            <p>+91 98765 43210</p>
+            <p>info@royalspice.com</p>
         </div>
 
     </div>
 
     <div class="footer-bottom">
-        © 2026 Royal Spice Restaurant | All Rights Reserved
+        © 2026 Royal Spice | All Rights Reserved
     </div>
-    </footer>
+</footer>
 
 </body>
-</html>
-
-
-
+  </html>
+  
