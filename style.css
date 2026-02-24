@@ -167,3 +167,95 @@ text-decoration:none;
 .nav-links a{display:block;margin:10px 0;}
   }
 
+/* ================= ABOUT PAGE ================= */
+
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    color: gold;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.about-section {
+    padding: 80px 60px;
+}
+
+.about-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: gold;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.features {
+    padding: 80px 60px;
+    text-align: center;
+    background: #1a1a1a;
+}
+
+.features h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: gold;
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: #222;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.4s;
+    border: 1px solid #333;
+}
+
+.feature-card:hover {
+    background: gold;
+    color: black;
+    transform: translateY(-10px);
+}
+
+@media(max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+    }
+  }
+
+
