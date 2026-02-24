@@ -432,6 +432,40 @@ text-decoration:none;
     transform: scale(1.02);
 }
 
+    /* ================= HOME ABOUT ================= */
+
+.home-about {
+    padding: 100px 60px;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.home-image img:hover {
+    transform: scale(1.05);
+}
+    
+
 
 /* ================= PREMIUM FOOTER ================= */
 
