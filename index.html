@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Royal Spice | Luxury Dining</title>
+<title>Royal Spice | Luxury Fine Dining</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
 <style>
 body{
@@ -15,18 +16,26 @@ background:#000;
 color:#fff;
 scroll-behavior:smooth;
 }
+
 .navbar{
-background:#000;
+background:rgba(0,0,0,0.9);
 }
+
 .navbar-brand{
 color:#d4af37 !important;
 font-weight:700;
 font-size:28px;
 }
+
+.nav-link{
+color:#fff !important;
+margin-left:15px;
+}
+
 .hero{
 height:100vh;
 background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-url('https://images.unsplash.com/photo-1555992336-03a23c7b20ee');
+url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -34,38 +43,52 @@ align-items:center;
 justify-content:center;
 text-align:center;
 }
+
 .hero h1{
-font-size:55px;
+font-size:60px;
 color:#d4af37;
 font-weight:700;
 }
+
 .btn-gold{
 background:#d4af37;
 color:#000;
 font-weight:600;
 }
+
 .section-title{
 color:#d4af37;
 font-weight:700;
 margin-bottom:40px;
+text-align:center;
 }
+
 .card{
 background:#111;
 border:1px solid #d4af37;
 transition:0.3s;
 }
+
 .card:hover{
 transform:scale(1.05);
 }
+
 .gallery img{
 height:250px;
 object-fit:cover;
+transition:0.4s;
 }
+
+.gallery img:hover{
+transform:scale(1.1);
+}
+
 .footer{
 background:#111;
-padding:20px;
+padding:30px;
 text-align:center;
 }
+
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -77,17 +100,37 @@ border-radius:50%;
 font-size:24px;
 text-decoration:none;
 }
+
+.map iframe{
+width:100%;
+height:300px;
+border:0;
+}
 </style>
 </head>
 
 <body>
 
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 <div class="container">
 <a class="navbar-brand" href="#">Royal Spice</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navmenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
 </div>
 </nav>
 
+<!-- Hero -->
 <section class="hero">
 <div>
 <h1>Experience Royal Dining</h1>
@@ -96,41 +139,60 @@ text-decoration:none;
 </div>
 </section>
 
-<section class="container py-5 text-center">
-<h2 class="section-title">About Us</h2>
-<p>Royal Spice offers world-class fine dining with premium ambiance and authentic flavors.</p>
+<!-- About -->
+<section id="about" class="container py-5">
+<h2 class="section-title">About Royal Spice</h2>
+<div class="row align-items-center">
+<div class="col-md-6">
+<img src="https://images.unsplash.com/photo-1559339352-11d035aa65de" class="img-fluid rounded">
+</div>
+<div class="col-md-6">
+<p>Royal Spice delivers premium fine dining with world-class chefs, authentic flavors, and royal ambiance. Our mission is to create unforgettable dining experiences.</p>
+</div>
+</div>
 </section>
 
+<!-- Menu -->
 <section id="menu" class="container py-5">
-<h2 class="text-center section-title">Our Special Menu</h2>
+<h2 class="section-title">Our Special Menu</h2>
 <div class="row g-4">
 
 <div class="col-md-4">
-<div class="card p-3 text-center">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d" class="card-img-top">
+<div class="card-body text-center">
 <h5>Royal Chicken Biryani</h5>
 <p>$15</p>
 </div>
 </div>
+</div>
 
 <div class="col-md-4">
-<div class="card p-3 text-center">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950" class="card-img-top">
+<div class="card-body text-center">
 <h5>Grilled Lamb Chops</h5>
 <p>$25</p>
 </div>
 </div>
+</div>
 
 <div class="col-md-4">
-<div class="card p-3 text-center">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1553621042-f6e147245754" class="card-img-top">
+<div class="card-body text-center">
 <h5>Butter Garlic Prawns</h5>
 <p>$22</p>
+</div>
 </div>
 </div>
 
 </div>
 </section>
 
-<section class="container py-5 gallery">
-<h2 class="text-center section-title">Gallery</h2>
+<!-- Gallery -->
+<section id="gallery" class="container py-5 gallery">
+<h2 class="section-title">Gallery</h2>
 <div class="row g-3">
 <div class="col-md-4"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" class="img-fluid rounded"></div>
 <div class="col-md-4"><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2" class="img-fluid rounded"></div>
@@ -138,45 +200,38 @@ text-decoration:none;
 </div>
 </section>
 
-<section class="container py-5">
-<h2 class="text-center section-title">Book a Table</h2>
+<!-- Booking -->
+<section id="booking" class="container py-5">
+<h2 class="section-title">Book a Table</h2>
 <form class="row g-3">
-<div class="col-md-6">
-<input type="text" class="form-control" placeholder="Your Name">
-</div>
-<div class="col-md-6">
-<input type="date" class="form-control">
-</div>
-<div class="col-md-6">
-<input type="time" class="form-control">
-</div>
-<div class="col-md-6">
-<input type="number" class="form-control" placeholder="Guests">
-</div>
+<div class="col-md-6"><input type="text" class="form-control" placeholder="Your Name"></div>
+<div class="col-md-6"><input type="email" class="form-control" placeholder="Email"></div>
+<div class="col-md-6"><input type="date" class="form-control"></div>
+<div class="col-md-6"><input type="number" class="form-control" placeholder="Guests"></div>
 <div class="col-12 text-center">
 <button type="submit" class="btn btn-gold">Reserve Now</button>
 </div>
 </form>
 </section>
 
-<section class="container py-5 text-center">
-<h2 class="section-title">Testimonials</h2>
-<p>"Best luxury dining experience in Dubai!" ⭐⭐⭐⭐⭐</p>
-<p>"Amazing taste and royal ambiance." ⭐⭐⭐⭐⭐</p>
-</section>
-
-<section class="container py-5 text-center">
-<h2 class="section-title">Contact</h2>
+<!-- Contact -->
+<section id="contact" class="container py-5 text-center">
+<h2 class="section-title">Contact Us</h2>
 <p>📍 Downtown Dubai</p>
 <p>📞 +971 50 123 4567</p>
+<div class="map mt-3">
+<iframe src="https://maps.google.com/maps?q=dubai&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
 </section>
 
 <div class="footer">
-© 2026 Royal Spice | All Rights Reserved
+© 2026 Royal Spice | Luxury Fine Dining
 </div>
 
-<a href="https://wa.me/971501234567" class="whatsapp">💬</a>
+<a href="https://wa.me/971501234567" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-</html>
+  </html>
+
